@@ -1,0 +1,4 @@
+services:
+#    dziadek_projekt.example:
+#        class: Dziadek\ProjektBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

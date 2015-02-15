@@ -1,0 +1,3 @@
+dziadek_projekt_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: DziadekProjektBundle:Default:index }

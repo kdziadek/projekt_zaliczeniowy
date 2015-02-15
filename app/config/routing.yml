@@ -1,0 +1,9 @@
+DziadekProjektBundle:
+    resource: "@DziadekProjektBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+dziadek_projekt:
+    resource: "@DziadekProjektBundle/Resources/config/routing.yml"
+    prefix:   /
+
