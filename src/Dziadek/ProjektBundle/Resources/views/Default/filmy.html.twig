@@ -1,0 +1,31 @@
+{% extends "DziadekProjektBundle::layout.html.twig" %}
+
+{% block title %}
+	Dostępne filmy
+{% endblock %}
+{% block content %}
+<h1>Dostępne filmy</h1>
+<table>
+	<thead>
+		<tr>
+			<th>lp.</th>
+			<th>Tytuł</th>
+			<th>Rok Produkcji</th>
+			<th>Reżyser</th>
+			<th>Cena</th>
+
+		</tr>
+	</thead>
+	<tbody>
+		{% for entity in entities %}
+			<tr>
+				<td>{{ loop.index }}.</td>
+				<td>{{ entity.tytul }}</td>
+				<td>{{ entity.rokProdukcji }}</td>
+				<td>{{ entity.rezyser }}</td>
+				<td>{{ entity.cena }}</td>
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>
+{% endblock %}

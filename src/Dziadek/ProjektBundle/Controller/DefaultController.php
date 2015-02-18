@@ -23,7 +23,9 @@ class DefaultController extends Controller
 	*/
 	public function filmyAction()
     {
-        return array();
+        $em = $this->getDoctrine()->getEntityManager();
+		$entities = $em->getRepository('DziadekProjektBundle:Filmy')->findAll();
+		return array('entities' => $entities);
     }
 	
 	/**
